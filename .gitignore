@@ -1,0 +1,10 @@
+.vs/
+.vsconfig
+Library/
+Logs/
+obj/
+Temp/
+UserSettings/
+Assemble-CSharp.csproj
+DetectiveDeath.sln
+Assembly-CSharp.csproj
