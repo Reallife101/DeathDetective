@@ -17,6 +17,7 @@ public class movement : MonoBehaviour
     public LayerMask groundMask;
 
     public bool isGrounded;
+    public bool isCrouching;
 
     public Vector3 lastMove;
 
@@ -54,6 +55,7 @@ public class movement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
+        handleCrouch();
         handleJump();
         handleSpeed();
 
@@ -128,6 +130,23 @@ public class movement : MonoBehaviour
             //audioPlayers[1].PlayOneShot(jumpSFXS[Random.Range(0, jumpSFXS.Count)], .5f);
         }
 
+    }
+
+    void handleCrouch()
+    {
+        isCrouching = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.C) ? true : false;
+
+        if (isCrouching)
+        {
+            controller.height = 1f;
+            transform.position = new Vector3(transform.position.x, transform.position.y - 0.4f, transform.position.z);
+            groundCheck.transform.position = new Vector3(transform.position.x, transform.position.y - 0.4f, transform.position.z);
+        }
+        else
+        {
+            controller.height = 2f;
+            groundCheck.transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
+        }
     }
 
 }
