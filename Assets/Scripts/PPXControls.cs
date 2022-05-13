@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class PPXControls : MonoBehaviour
 {
+    [SerializeField] PostProcessVolume ppv;
+    [SerializeField] PostProcessVolume filmNoir;
     [SerializeField] float lerpDuration = 3f;
-    private PostProcessVolume ppv;
 
     // Start is called before the first frame update
     void Start()
     {
-        ppv = GetComponent<PostProcessVolume>();
         StartCoroutine(LerpOut(lerpDuration));
     }
 
@@ -23,10 +23,12 @@ public class PPXControls : MonoBehaviour
         while (timeElapsed < lerpDuration)
         {
             ppv.weight = Mathf.Lerp(1, 0, timeElapsed / lerpDuration);
+            filmNoir.weight = Mathf.Lerp(0, 1, timeElapsed / (lerpDuration/2));
             timeElapsed += Time.deltaTime;
             yield return null;
         }
         ppv.weight = 0;
+        filmNoir.weight = 1;
         GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().enabled = true;
     }
 
@@ -35,11 +37,13 @@ public class PPXControls : MonoBehaviour
         float timeElapsed = 0;
         while (timeElapsed < lerpDuration)
         {
-            ppv.weight = Mathf.Lerp(0, 1, timeElapsed / lerpDuration);
+            ppv.weight = Mathf.Lerp(0, 1, timeElapsed / (lerpDuration-.25f));
+            filmNoir.weight = Mathf.Lerp(1, 0, timeElapsed / lerpDuration);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
         ppv.weight = 1;
+        filmNoir.weight = 0;
         SceneManager.LoadScene(name);
     }
 
