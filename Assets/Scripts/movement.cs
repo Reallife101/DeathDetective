@@ -41,11 +41,10 @@ public class movement : MonoBehaviour
     {
         currentSpeed = movementSpeed;
         lastMove = Vector3.zero;
-        /*
         footstepCounter = 0;
         footstepTime = 3f;
         audioPlayers = GetComponents<AudioSource>();
-        */
+        
 
     }
 
@@ -65,19 +64,17 @@ public class movement : MonoBehaviour
         // Move Character
         Vector3 move = transform.right * x + transform.forward * z;
 
-        //footstepTime = footstepTime + Time.deltaTime;
+        footstepTime = footstepTime + Time.deltaTime;
         if (!isGrounded)
         {
-            //controller.Move((lastMove + (move * 0.25f)) * currentSpeed * Time.deltaTime);
             footstepTime = 3f;
         }
         else
         {
-            //controller.Move(move * currentSpeed * Time.deltaTime);
             lastMove = move;
-            if (move.magnitude > 0f)
+            if (move.magnitude > 0f && canMove)
             {
-                //playFootstep();
+                playFootstep();
             }
 
         }
@@ -107,7 +104,7 @@ public class movement : MonoBehaviour
 
     void playFootstep()
     {
-        if (footstepTime > footsteps[footstepCounter].length)
+        if ((footstepTime > footsteps[footstepCounter].length+.25f && currentSpeed > movementSpeed) || (footstepTime > footsteps[footstepCounter].length + .5f && currentSpeed <= movementSpeed))
         {
             audioPlayers[0].PlayOneShot(footsteps[footstepCounter], 0.1f);
             footstepTime = 0;
