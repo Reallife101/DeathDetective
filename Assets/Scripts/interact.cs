@@ -38,11 +38,11 @@ public class interact : MonoBehaviour
                     hit.transform.GetComponent<Interactable>().interact();
                 }
             }
-        }
-        else if (oldhit != null)
-        {
-            oldhit.GetComponent<Interactable>().he.highlighted = false;
-            oldhit = null;
+            else if (oldhit != null)
+            {
+                oldhit.GetComponent<Interactable>().he.highlighted = false;
+                oldhit = null;
+            }
         }
 
     }
