@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class openJournal : MonoBehaviour
 {
     [SerializeField] Image white;
-    
+
+    private JournalManager jm;
     private Animator ani;
     private bool up = false;
 
@@ -14,6 +15,7 @@ public class openJournal : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
+        jm = GameObject.FindGameObjectWithTag("Journal").GetComponent<JournalManager>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class openJournal : MonoBehaviour
             }
             else
             {
+                jm.hideJournal();
                 StartCoroutine(Lerp(1, 0, 0f, .5f));
                 Cursor.lockState = CursorLockMode.Locked;
             }
@@ -50,5 +53,10 @@ public class openJournal : MonoBehaviour
             yield return null;
         }
         white.color = new Color(1, 1, 1, end);
+
+        if (end > 0.5f)
+        {
+            jm.showJournal();
+        }
     }
 }
