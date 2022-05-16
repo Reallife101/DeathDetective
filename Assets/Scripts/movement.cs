@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
+    public bool canMove = true;
+    
     public CharacterController controller;
 
     public float movementSpeed = 12.0f;
@@ -44,7 +46,7 @@ public class movement : MonoBehaviour
         footstepTime = 3f;
         audioPlayers = GetComponents<AudioSource>();
         */
-        
+
     }
 
     // Update is called once per frame
@@ -79,7 +81,11 @@ public class movement : MonoBehaviour
             }
 
         }
-        controller.Move(move * currentSpeed * Time.deltaTime);
+
+        if (canMove)
+        {
+            controller.Move(move * currentSpeed * Time.deltaTime);
+        }
 
         // Gravity
         velocity.y += gravity * Time.deltaTime;
