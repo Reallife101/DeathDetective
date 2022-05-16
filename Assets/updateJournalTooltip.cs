@@ -5,6 +5,7 @@ using TMPro;
 
 public class updateJournalTooltip : MonoBehaviour
 {
+    [SerializeField] AudioClip ac;
     TMP_Text text;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class updateJournalTooltip : MonoBehaviour
     public void playTooltip()
     {
         StartCoroutine(playTooltipC());
+        GetComponent<AudioSource>().PlayOneShot(ac, .6f);
     }
 
     private void Update()
