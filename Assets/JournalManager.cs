@@ -48,7 +48,7 @@ public class JournalManager : MonoBehaviour
     {
         for (int i = 0; i < sceneNames.Count; i++)
         {
-            if (sceneNames[i] == name)
+            if (sceneNames[i] == name && !scenesDiscovered[i])
             {
                 playTooltip();
                 scenesDiscovered[i] = true;
@@ -59,9 +59,12 @@ public class JournalManager : MonoBehaviour
 
     public void discoverClue(string location, int clueNumber)
     {
-        playTooltip();
-        clueList[locationIndex[location]].Item1[clueNumber].SetActive(true);
-        clueList[locationIndex[location]].Item2[clueNumber] = true;
+        if (!clueList[locationIndex[location]].Item2[clueNumber])
+        {
+            playTooltip();
+            clueList[locationIndex[location]].Item1[clueNumber].SetActive(true);
+            clueList[locationIndex[location]].Item2[clueNumber] = true;
+        }
     }
 
     public void enableTableOfContents()
