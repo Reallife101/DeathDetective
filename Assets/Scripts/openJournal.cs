@@ -26,6 +26,7 @@ public class openJournal : MonoBehaviour
             up = !up;
             ani.SetBool("up", up);
             GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().canMove = !up;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<interact>().canInteract = !up;
 
             if (up)
             {

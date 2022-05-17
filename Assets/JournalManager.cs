@@ -11,6 +11,10 @@ public class JournalManager : MonoBehaviour
     [SerializeField] GameObject diner;
     [SerializeField] GameObject asylum;
     [SerializeField] GameObject city;
+    [SerializeField] GameObject office;
+    [SerializeField] GameObject garage;
+    [SerializeField] GameObject home;
+    [SerializeField] GameObject doctor;
 
     //Scenes table of contents
     [SerializeField] List<string> sceneNames;
@@ -22,7 +26,7 @@ public class JournalManager : MonoBehaviour
     private List<bool> dinerCluesDiscovered = new List<bool>();
 
 
-    private Dictionary<string, int> locationIndex = new Dictionary<string, int> () { { "diner", 0 }, { "asylum", 1 }, { "city", 2 } };
+    private Dictionary<string, int> locationIndex = new Dictionary<string, int>() { { "diner", 0 }, { "asylum", 1 }, { "city", 2 }, { "office", 3 }, { "garage", 4 }, {"home", 5 }, {"doctor", 6 } };
     private List<(List<GameObject>, List<bool>)> clueList;
 
     void Start()
@@ -87,7 +91,31 @@ public class JournalManager : MonoBehaviour
         diner.SetActive(false);
         asylum.SetActive(false);
         city.SetActive(false);
+        office.SetActive(false);
+        garage.SetActive(false);
+        home.SetActive(false);
+        doctor.SetActive(false);
         tableOfContents.SetActive(false);
+    }
+    public void enableDoctor()
+    {
+        disableContent();
+        doctor.SetActive(true);
+    }
+    public void enableHome()
+    {
+        disableContent();
+        home.SetActive(true);
+    }
+    public void enableGarage()
+    {
+        disableContent();
+        garage.SetActive(true);
+    }
+    public void enableOffice()
+    {
+        disableContent();
+        office.SetActive(true);
     }
     public void enableCity()
     {

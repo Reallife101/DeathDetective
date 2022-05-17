@@ -8,6 +8,8 @@ public class interact : MonoBehaviour
     [SerializeField] GameObject camera;
     [SerializeField] LayerMask player;
 
+    public bool canInteract = true;
+
     private Transform oldhit;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,7 @@ public class interact : MonoBehaviour
 
         if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, interactDistance, ~player))
         {
-            if (hit.transform.GetComponent<Interactable>())
+            if (canInteract && hit.transform.GetComponent<Interactable>())
             {
                 hit.transform.GetComponent<Interactable>().he.highlighted = true;
 

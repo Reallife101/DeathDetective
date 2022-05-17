@@ -22,6 +22,7 @@ public class PPXControls : MonoBehaviour
     {
         GetComponent<AudioSource>().PlayOneShot(audioin, .6f);
         GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().canMove = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<interact>().canInteract = false;
         float timeElapsed = 0;
         while (timeElapsed < lerpDuration)
         {
@@ -33,6 +34,7 @@ public class PPXControls : MonoBehaviour
         ppv.weight = 0;
         filmNoir.weight = 1;
         GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().canMove = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<interact>().canInteract = true;
     }
 
     IEnumerator LerpIn(float lerpDuration, string name)
