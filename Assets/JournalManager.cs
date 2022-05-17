@@ -9,6 +9,8 @@ public class JournalManager : MonoBehaviour
     [SerializeField] GameObject Journal;
     [SerializeField] GameObject tableOfContents;
     [SerializeField] GameObject diner;
+    [SerializeField] GameObject asylum;
+    [SerializeField] GameObject city;
 
     //Scenes table of contents
     [SerializeField] List<string> sceneNames;
@@ -20,7 +22,7 @@ public class JournalManager : MonoBehaviour
     private List<bool> dinerCluesDiscovered = new List<bool>();
 
 
-    private Dictionary<string, int> locationIndex = new Dictionary<string, int> () { { "diner", 0 }, { "city", 1 } };
+    private Dictionary<string, int> locationIndex = new Dictionary<string, int> () { { "diner", 0 }, { "asylum", 1 }, { "city", 2 } };
     private List<(List<GameObject>, List<bool>)> clueList;
 
     void Start()
@@ -83,12 +85,24 @@ public class JournalManager : MonoBehaviour
     private void disableContent()
     {
         diner.SetActive(false);
+        asylum.SetActive(false);
+        city.SetActive(false);
         tableOfContents.SetActive(false);
+    }
+    public void enableCity()
+    {
+        disableContent();
+        city.SetActive(true);
     }
     public void enableDiner()
     {
         disableContent();
         diner.SetActive(true);
+    }
+    public void enableAsylum()
+    {
+        disableContent();
+        asylum.SetActive(true);
     }
 
     public void playTooltip()
