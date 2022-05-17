@@ -25,13 +25,42 @@ public class JournalManager : MonoBehaviour
     [SerializeField] List<GameObject> dinerClues;
     private List<bool> dinerCluesDiscovered = new List<bool>();
 
+    //Asylum
+    [SerializeField] List<GameObject> asylumClues;
+    private List<bool> asylumCluesDiscovered = new List<bool>();
 
-    private Dictionary<string, int> locationIndex = new Dictionary<string, int>() { { "diner", 0 }, { "asylum", 1 }, { "city", 2 }, { "office", 3 }, { "garage", 4 }, {"home", 5 }, {"doctor", 6 } };
+    //City
+    [SerializeField] List<GameObject> cityClues;
+    private List<bool> cityCluesDiscovered = new List<bool>();
+
+    //Office
+    [SerializeField] List<GameObject> officeClues;
+    private List<bool> officeCluesDiscovered = new List<bool>();
+
+    //Garage
+    [SerializeField] List<GameObject> garageClues;
+    private List<bool> garageCluesDiscovered = new List<bool>();
+
+    //Home
+    [SerializeField] List<GameObject> homeClues;
+    private List<bool> homeCluesDiscovered = new List<bool>();
+
+    //Doctors
+    [SerializeField] List<GameObject> doctorClues;
+    private List<bool> doctorCluesDiscovered = new List<bool>();
+
+
+
+
+    private Dictionary<string, int> locationIndex = new Dictionary<string, int>() { { "diner", 0 }, { "asylum", 1 }, { "city", 2 }, { "office", 3 }, 
+        { "garage", 4 }, {"home", 5 }, {"doctor", 6 } };
     private List<(List<GameObject>, List<bool>)> clueList;
 
     void Start()
     {
-        clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered) };
+        clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered), (asylumClues, asylumCluesDiscovered), 
+            (cityClues, cityCluesDiscovered), (officeClues, officeCluesDiscovered), (garageClues, garageCluesDiscovered), (homeClues, homeCluesDiscovered),
+            (doctorClues, doctorCluesDiscovered)};
         genList();
     }
 
@@ -73,10 +102,9 @@ public class JournalManager : MonoBehaviour
         }
     }
 
-    public void enableTableOfContents()
+    public void enableContent()
     {
         disableContent();
-        tableOfContents.SetActive(true);
         for (int i = 0; i < scenesDiscovered.Count; i++)
         {
             if (scenesDiscovered[i])
@@ -96,6 +124,12 @@ public class JournalManager : MonoBehaviour
         home.SetActive(false);
         doctor.SetActive(false);
         tableOfContents.SetActive(false);
+    }
+
+    public void enableTableOfContents()
+    {
+        disableContent();
+        tableOfContents.SetActive(true);
     }
     public void enableDoctor()
     {
