@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5702926180778204627}
   - component: {fileID: 2960767479905538688}
   m_Layer: 5
-  m_Name: City
+  m_Name: Diner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5702926180778204627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1143495811237075551}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: enableDiner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6722866537263277718
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5008603686029626259
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1001,10 +1013,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Journal: {fileID: 7197646517348940216}
   tableOfContents: {fileID: 7962640422986913971}
+  diner: {fileID: 8020151588750773675}
   sceneNames:
   - City
   sceneButtons:
   - {fileID: 6350158725599911612}
+  dinerClues: []
 --- !u!1 &7488633207068901607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5601604585241085134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1598,12 +1612,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1603221625943776706}
   m_Layer: 5
-  m_Name: City
+  m_Name: Diner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1603221625943776706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1745,7 +1759,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166713824932379118}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1143495811237075551}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: enableTableOfContents
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8939448899714312655
 GameObject:
   m_ObjectHideFlags: 0

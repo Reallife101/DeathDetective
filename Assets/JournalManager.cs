@@ -8,24 +8,38 @@ public class JournalManager : MonoBehaviour
 
     [SerializeField] GameObject Journal;
     [SerializeField] GameObject tableOfContents;
+    [SerializeField] GameObject diner;
 
     //Scenes table of contents
     [SerializeField] List<string> sceneNames;
     [SerializeField] List<GameObject> sceneButtons;
     private List<bool> scenesDiscovered = new List<bool>();
 
+    //Diner
+    [SerializeField] List<GameObject> dinerClues;
+    private List<bool> dinerCluesDiscovered = new List<bool>();
+
+
+    private Dictionary<string, int> locationIndex = new Dictionary<string, int> () { { "diner", 0 }, { "city", 1 } };
+    private List<(List<GameObject>, List<bool>)> clueList;
 
     void Start()
     {
-        genSceneList();
+        clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered) };
+        genList();
     }
 
 
-    private void genSceneList()
+    private void genList()
     {
         for (int i = 0; i < sceneNames.Count; i++)
         {
             scenesDiscovered.Add(false);
+        }
+
+        for (int i = 0; i < dinerClues.Count; i++)
+        {
+            dinerCluesDiscovered.Add(false);
         }
     }
 
@@ -36,14 +50,23 @@ public class JournalManager : MonoBehaviour
         {
             if (sceneNames[i] == name)
             {
+                playTooltip();
                 scenesDiscovered[i] = true;
                 sceneButtons[i].SetActive(true);
             }
         }
     }
 
-    void enableTableOfContents()
+    public void discoverClue(string location, int clueNumber)
     {
+        playTooltip();
+        clueList[locationIndex[location]].Item1[clueNumber].SetActive(true);
+        clueList[locationIndex[location]].Item2[clueNumber] = true;
+    }
+
+    public void enableTableOfContents()
+    {
+        disableContent();
         tableOfContents.SetActive(true);
         for (int i = 0; i < scenesDiscovered.Count; i++)
         {
@@ -54,9 +77,15 @@ public class JournalManager : MonoBehaviour
         }
     }
 
-    private void disableTableOfContents()
+    private void disableContent()
     {
+        diner.SetActive(false);
         tableOfContents.SetActive(false);
+    }
+    public void enableDiner()
+    {
+        disableContent();
+        diner.SetActive(true);
     }
 
     public void playTooltip()
