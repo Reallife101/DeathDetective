@@ -6,40 +6,45 @@ public static class saveJournal
 {
     public static bool dataExists()
     {
-        return File.Exists(Application.persistentDataPath + "/journal.data");
+        return File.Exists(Path.Combine(Application.persistentDataPath, "journal.data"));
+    }
+
+    public static void deleteFile()
+    {
+        if( File.Exists(Path.Combine(Application.persistentDataPath, "journal.data")))
+        {
+            File.Delete(Path.Combine(Application.persistentDataPath, "journal.data"));
+        }
     }
 
     public static void SaveJournal(JournalManager jm)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/journal.data";
-        FileStream stream = new FileStream(path, FileMode.Create);
-
         journalData data = new journalData(jm);
 
-        formatter.Serialize(stream, data);
-        stream.Close();
+        using (FileStream fs = File.Create(Path.Combine(Application.persistentDataPath, "journal.data")))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(fs, data);
+        }
     }
 
     public static void SaveJournal(journalData md)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/journal.data";
-        FileStream stream = new FileStream(path, FileMode.Create);
-
-        formatter.Serialize(stream, md);
-        stream.Close();
+        using (FileStream fs = File.Create(Path.Combine(Application.persistentDataPath, "journal.data")))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(fs, md);
+        }
     }
 
     public static journalData loadJournal()
     {
-        string path = Application.persistentDataPath + "/journal.data";
-
-        BinaryFormatter formatter = new BinaryFormatter();
-        FileStream stream = new FileStream(path, FileMode.Open);
-
-        journalData data = formatter.Deserialize(stream) as journalData;
-        stream.Close();
+        journalData data = null;
+        using (FileStream fs = File.Open(Path.Combine(Application.persistentDataPath, "journal.data"), FileMode.Open))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            data = formatter.Deserialize(fs) as journalData;
+        }
 
         return data;
     }

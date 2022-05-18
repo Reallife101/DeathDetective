@@ -58,7 +58,25 @@ public class JournalManager : MonoBehaviour
 
     void Start()
     {
-        genList();
+        //saveJournal.deleteFile();
+        if (saveJournal.dataExists())
+        {
+            journalData jd = saveJournal.loadJournal();
+            scenesDiscovered = new List<bool>(jd.scenesDiscovered);
+            dinerCluesDiscovered = new List<bool>(jd.dinerCluesDiscovered);
+            asylumCluesDiscovered = new List<bool>(jd.asylumCluesDiscovered);
+            cityCluesDiscovered = new List<bool>(jd.cityCluesDiscovered);
+            officeCluesDiscovered = new List<bool>(jd.officeCluesDiscovered);
+            garageCluesDiscovered = new List<bool>(jd.garageCluesDiscovered);
+            homeCluesDiscovered = new List<bool>(jd.homeCluesDiscovered);
+            doctorCluesDiscovered = new List<bool>(jd.doctorCluesDiscovered);
+            enableContent();
+            tableOfContents.SetActive(true);
+        }
+        else 
+        {
+            genList();
+        }
         clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered), (asylumClues, asylumCluesDiscovered), 
             (cityClues, cityCluesDiscovered), (officeClues, officeCluesDiscovered), (garageClues, garageCluesDiscovered), (homeClues, homeCluesDiscovered),
             (doctorClues, doctorCluesDiscovered)};
@@ -114,6 +132,7 @@ public class JournalManager : MonoBehaviour
                 playTooltip();
                 scenesDiscovered[i] = true;
                 sceneButtons[i].SetActive(true);
+                saveJournal.SaveJournal(this);
             }
         }
     }
@@ -125,6 +144,7 @@ public class JournalManager : MonoBehaviour
             playTooltip();
             clueList[locationIndex[location.ToLower()]].Item1[clueNumber].SetActive(true);
             clueList[locationIndex[location.ToLower()]].Item2[clueNumber] = true;
+            saveJournal.SaveJournal(this);
         }
     }
 
@@ -136,6 +156,14 @@ public class JournalManager : MonoBehaviour
             if (scenesDiscovered[i])
             {
                 sceneButtons[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < dinerCluesDiscovered.Count; i++)
+        {
+            if (dinerCluesDiscovered[i])
+            {
+                dinerClues[i].SetActive(true);
             }
         }
     }
