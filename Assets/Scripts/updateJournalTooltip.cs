@@ -19,14 +19,6 @@ public class updateJournalTooltip : MonoBehaviour
         GetComponent<AudioSource>().PlayOneShot(ac, .6f);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            playTooltip();
-        }
-    }
-
     IEnumerator playTooltipC()
     {
         text.text = "J ";

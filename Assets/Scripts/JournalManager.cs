@@ -49,9 +49,6 @@ public class JournalManager : MonoBehaviour
     [SerializeField] List<GameObject> doctorClues;
     public List<bool> doctorCluesDiscovered = new List<bool>();
 
-
-
-
     private Dictionary<string, int> locationIndex = new Dictionary<string, int>() { { "diner", 0 }, { "asylum", 1 }, { "city", 2 }, { "office", 3 }, 
         { "garage", 4 }, {"home", 5 }, {"doctor", 6 } };
     private List<(List<GameObject>, List<bool>)> clueList;
@@ -82,6 +79,14 @@ public class JournalManager : MonoBehaviour
             (doctorClues, doctorCluesDiscovered)};
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            saveJournal.deleteFile();
+            playTooltip();
+        }
+    }
 
     private void genList()
     {
