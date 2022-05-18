@@ -58,10 +58,10 @@ public class JournalManager : MonoBehaviour
 
     void Start()
     {
+        genList();
         clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered), (asylumClues, asylumCluesDiscovered), 
             (cityClues, cityCluesDiscovered), (officeClues, officeCluesDiscovered), (garageClues, garageCluesDiscovered), (homeClues, homeCluesDiscovered),
             (doctorClues, doctorCluesDiscovered)};
-        genList();
     }
 
 
@@ -75,6 +75,16 @@ public class JournalManager : MonoBehaviour
         for (int i = 0; i < dinerClues.Count; i++)
         {
             dinerCluesDiscovered.Add(false);
+        }
+
+        for (int i = 0; i < asylumClues.Count; i++)
+        {
+            asylumCluesDiscovered.Add(false);
+        }
+
+        for (int i = 0; i < cityClues.Count; i++)
+        {
+            cityCluesDiscovered.Add(false);
         }
     }
 
@@ -94,11 +104,11 @@ public class JournalManager : MonoBehaviour
 
     public void discoverClue(string location, int clueNumber)
     {
-        if (!clueList[locationIndex[location]].Item2[clueNumber])
+        if (!clueList[locationIndex[location.ToLower()]].Item2[clueNumber])
         {
             playTooltip();
-            clueList[locationIndex[location]].Item1[clueNumber].SetActive(true);
-            clueList[locationIndex[location]].Item2[clueNumber] = true;
+            clueList[locationIndex[location.ToLower()]].Item1[clueNumber].SetActive(true);
+            clueList[locationIndex[location.ToLower()]].Item2[clueNumber] = true;
         }
     }
 
