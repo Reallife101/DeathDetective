@@ -83,7 +83,7 @@ public class JournalManager : MonoBehaviour
     {
         for (int i = 0; i < sceneNames.Count; i++)
         {
-            if (sceneNames[i] == name && !scenesDiscovered[i])
+            if (sceneNames[i].ToLower() == name.ToLower() && !scenesDiscovered[i])
             {
                 playTooltip();
                 scenesDiscovered[i] = true;
