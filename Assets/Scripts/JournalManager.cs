@@ -83,44 +83,96 @@ public class JournalManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            saveJournal.deleteFile();
-            playTooltip();
+            deletejournal();
         }
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            discoverScene("diner");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            discoverScene("asylum");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            discoverScene("city");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            discoverScene("office");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            discoverScene("garage");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            discoverScene("home");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            discoverScene("doctor");
+        }
+    }
+
+    private void deletejournal()
+    {
+        saveJournal.deleteFile();
+        genList();
+        clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered), (asylumClues, asylumCluesDiscovered),
+            (cityClues, cityCluesDiscovered), (officeClues, officeCluesDiscovered), (garageClues, garageCluesDiscovered), (homeClues, homeCluesDiscovered),
+            (doctorClues, doctorCluesDiscovered)};
+        saveJournal.SaveJournal(this);
+        playTooltip();
+        enableContent();
+        enableTableOfContents();
     }
 
     private void genList()
     {
+        scenesDiscovered = new List<bool>();
         for (int i = 0; i < sceneNames.Count; i++)
         {
             scenesDiscovered.Add(false);
         }
 
+        dinerCluesDiscovered = new List<bool>();
         for (int i = 0; i < dinerClues.Count; i++)
         {
             dinerCluesDiscovered.Add(false);
         }
 
+        asylumCluesDiscovered = new List<bool>();
         for (int i = 0; i < asylumClues.Count; i++)
         {
             asylumCluesDiscovered.Add(false);
         }
 
+        cityCluesDiscovered = new List<bool>();
         for (int i = 0; i < cityClues.Count; i++)
         {
             cityCluesDiscovered.Add(false);
         }
+
+        officeCluesDiscovered = new List<bool>();
         for (int i = 0; i < officeClues.Count; i++)
         {
             officeCluesDiscovered.Add(false);
         }
+
+        garageCluesDiscovered = new List<bool>();
         for (int i = 0; i < garageClues.Count; i++)
         {
             garageCluesDiscovered.Add(false);
         }
+
+        homeCluesDiscovered = new List<bool>();
         for (int i = 0; i < homeClues.Count; i++)
         {
             homeCluesDiscovered.Add(false);
         }
+
+        doctorCluesDiscovered = new List<bool>();
         for (int i = 0; i < doctorClues.Count; i++)
         {
             doctorCluesDiscovered.Add(false);
@@ -162,6 +214,10 @@ public class JournalManager : MonoBehaviour
             {
                 sceneButtons[i].SetActive(true);
             }
+            else
+            {
+                sceneButtons[i].SetActive(false);
+            }
         }
 
         for (int i = 0; i < dinerCluesDiscovered.Count; i++)
@@ -169,6 +225,10 @@ public class JournalManager : MonoBehaviour
             if (dinerCluesDiscovered[i])
             {
                 dinerClues[i].SetActive(true);
+            }
+            else
+            {
+                dinerClues[i].SetActive(false);
             }
         }
 
@@ -178,6 +238,10 @@ public class JournalManager : MonoBehaviour
             {
                 asylumClues[i].SetActive(true);
             }
+            else
+            {
+                asylumClues[i].SetActive(false);
+            }
         }
 
         for (int i = 0; i < cityCluesDiscovered.Count; i++)
@@ -185,6 +249,10 @@ public class JournalManager : MonoBehaviour
             if (cityCluesDiscovered[i])
             {
                 cityClues[i].SetActive(true);
+            }
+            else
+            {
+                cityClues[i].SetActive(false);
             }
         }
 
@@ -194,6 +262,10 @@ public class JournalManager : MonoBehaviour
             {
                 officeClues[i].SetActive(true);
             }
+            else
+            {
+                officeClues[i].SetActive(false);
+            }
         }
 
         for (int i = 0; i < garageCluesDiscovered.Count; i++)
@@ -201,6 +273,10 @@ public class JournalManager : MonoBehaviour
             if (garageCluesDiscovered[i])
             {
                 garageClues[i].SetActive(true);
+            }
+            else
+            {
+                garageClues[i].SetActive(false);
             }
         }
 
@@ -210,6 +286,10 @@ public class JournalManager : MonoBehaviour
             {
                 homeClues[i].SetActive(true);
             }
+            else
+            {
+                homeClues[i].SetActive(false);
+            }
         }
 
         for (int i = 0; i < doctorCluesDiscovered.Count; i++)
@@ -217,6 +297,10 @@ public class JournalManager : MonoBehaviour
             if (doctorCluesDiscovered[i])
             {
                 doctorClues[i].SetActive(true);
+            }
+            else
+            {
+                doctorClues[i].SetActive(false);
             }
         }
     }
