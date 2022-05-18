@@ -171,6 +171,54 @@ public class JournalManager : MonoBehaviour
                 dinerClues[i].SetActive(true);
             }
         }
+
+        for (int i = 0; i < asylumCluesDiscovered.Count; i++)
+        {
+            if (asylumCluesDiscovered[i])
+            {
+                asylumClues[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < cityCluesDiscovered.Count; i++)
+        {
+            if (cityCluesDiscovered[i])
+            {
+                cityClues[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < officeCluesDiscovered.Count; i++)
+        {
+            if (officeCluesDiscovered[i])
+            {
+                officeClues[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < garageCluesDiscovered.Count; i++)
+        {
+            if (garageCluesDiscovered[i])
+            {
+                garageClues[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < homeCluesDiscovered.Count; i++)
+        {
+            if (homeCluesDiscovered[i])
+            {
+                homeClues[i].SetActive(true);
+            }
+        }
+
+        for (int i = 0; i < doctorCluesDiscovered.Count; i++)
+        {
+            if (doctorCluesDiscovered[i])
+            {
+                doctorClues[i].SetActive(true);
+            }
+        }
     }
 
     private void disableContent()
