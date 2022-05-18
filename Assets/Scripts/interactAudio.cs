@@ -7,11 +7,16 @@ public class interactAudio : Interactable
     [SerializeField] AudioClip ac;
     [SerializeField] float volume = .8f;
 
+    [SerializeField] bool isClue = true;
+
     [SerializeField] string locationName;
     [SerializeField] int clueNumber;
     public override void interact()
     {
         GetComponent<AudioSource>().PlayOneShot(ac, volume);
-        GameObject.FindGameObjectWithTag("Journal").GetComponent<JournalManager>().discoverClue(locationName, clueNumber);
+        if (isClue)
+        {
+            GameObject.FindGameObjectWithTag("Journal").GetComponent<JournalManager>().discoverClue(locationName, clueNumber);
+        }
     }
 }
