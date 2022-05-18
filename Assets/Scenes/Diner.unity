@@ -12441,9 +12441,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_Text
-      value: "Burger :                              $3.5\nCheeseburger Burger:   
-        $4\n              ----\nNormal Fries:                    $2\n             
-        ----\nSoda:                                  $1\n"
+      value: "Burger :                              $7\nCheeseburger Burger:    $8\n             
+        ----\nNormal Fries:                    $2\n              ----\nSoda:                                 
+        $2\nMilkshake    \t\t\t             $5\n"
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_Font
