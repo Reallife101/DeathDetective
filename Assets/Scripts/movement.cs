@@ -56,7 +56,6 @@ public class movement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        handleCrouch();
         handleJump();
         handleSpeed();
 
