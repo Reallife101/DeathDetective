@@ -18238,7 +18238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 735823944}
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: 305aa09b38ba9421db4830a2c04fe358, type: 3}
   volume: 0.8
   isClue: 1
   locationName: diner
