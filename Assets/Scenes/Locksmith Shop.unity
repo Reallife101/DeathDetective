@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 918637e4419393540b8b4e4d9d2f8960, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: d329b4db7d98658448f10bfeddfb113e, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 9aac7dd483ef74907a7664fdcb0518f7, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -786,6 +786,7 @@ MonoBehaviour:
   player:
     serializedVersion: 2
     m_Bits: 128
+  canInteract: 1
 --- !u!82 &528634366
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12194,6 +12195,9 @@ MonoBehaviour:
   he: {fileID: 4440656072851007846}
   ac: {fileID: 0}
   volume: 0.8
+  isClue: 1
+  locationName: 
+  clueNumber: 0
 --- !u!114 &4440656072851007846
 MonoBehaviour:
   m_ObjectHideFlags: 0

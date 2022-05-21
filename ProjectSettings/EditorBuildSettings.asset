@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: 2a6c5b68b8caa544f889fdd2a8bb6fd1
+  - enabled: 1
+    path: Assets/Scenes/Asylum.unity
+    guid: b41d0274a7c4340eea272c92d51c306e
+  - enabled: 1
+    path: Assets/Scenes/Bedroom.unity
+    guid: 2cb7daa60070f424cb338874a017a258
+  - enabled: 1
+    path: Assets/Scenes/Detective Office.unity
+    guid: bac534e46113f6647905b1eb34b9a0eb
+  - enabled: 1
+    path: Assets/Scenes/Diner.unity
+    guid: 0ddb4c09ae9fe4069a0b071f085ba75f
+  - enabled: 1
+    path: Assets/Scenes/DoctorsOffice.unity
+    guid: 91c97d181c321ab44b53dba2b398e271
+  - enabled: 1
+    path: Assets/Scenes/Locksmith Shop.unity
+    guid: 5dbc998abb812eb4e91a6466907fedb8
   m_configObjects: {}
