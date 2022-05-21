@@ -1208,10 +1208,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 207626146}
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: deb28489f9204b040900c6d48dc0a79e, type: 3}
   volume: 0.8
   isClue: 0
-  locationName: 
+  locationName: asylum
   clueNumber: 0
 --- !u!114 &207626146 stripped
 MonoBehaviour:
@@ -1224,6 +1224,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &207626150
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207626143}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &220032084
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,7 +7021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 1008038191}
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: 7158f27f754c1ad419fde28bce3442e6, type: 3}
   volume: 0.8
   isClue: 1
   locationName: asylum
@@ -8479,7 +8575,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6db4b3aa4fa2634eaa040f0642f12c8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.209
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9986,7 +10082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 1339487720}
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: 33580eb349577604d85769b4888af2da, type: 3}
   volume: 0.8
   isClue: 1
   locationName: asylum
@@ -10819,7 +10915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438334, guid: f8ca8b584672e2c44b786aedd156b7eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.334
+      value: 24.156
       objectReference: {fileID: 0}
     - target: {fileID: 438334, guid: f8ca8b584672e2c44b786aedd156b7eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18477,9 +18573,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 203453304549184851, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
     - target: {fileID: 443450735583382785, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
+      objectReference: {fileID: 0}
+    - target: {fileID: 761241426876518096, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3178030701180472262, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690145101769850561, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064340430917876917, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
       objectReference: {fileID: 0}
     - target: {fileID: 7488633206600925237, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_RootOrder
@@ -18536,6 +18652,14 @@ PrefabInstance:
     - target: {fileID: 8350555686223042346, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051452819664413053, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191592906572134751, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00036621094
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
@@ -21181,7 +21305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 2121378179}
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: 589ce362f7fefa741837f03ff85b5884, type: 3}
   volume: 0.8
   isClue: 1
   locationName: asylum
