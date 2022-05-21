@@ -10192,7 +10192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51b2006cd42c74778904108f8b0fca1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96a831fc02bac437cacf2b23bd9187e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13613,7 +13613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0832b013be013e442b757f46a59e8e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ac: {fileID: 8300000, guid: 44fab8bb6ffa7c64abe7313495ed8b16, type: 3}
+  ac: {fileID: 8300000, guid: 29d106bca651db94cb1a43fff4b9fcfd, type: 3}
   volume: 0.8
   document: {fileID: 8266968524829776221}
 --- !u!82 &3782632377105538390
