@@ -2804,7 +2804,7 @@ PrefabInstance:
     - target: {fileID: 8737582283377541290, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e599cf3b0fcce4b2391cd82d80d0f041, type: 2}
+      objectReference: {fileID: 2100000, guid: c4ffc9269087b4fb1a0b04082e7a04fb, type: 2}
     - target: {fileID: 8737582284335810508, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Name
       value: Billboard (1)
@@ -9936,8 +9936,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339487718}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 7.282, y: 7.581, z: -24.254}
-  m_LocalScale: {x: 0.3, y: 0.5, z: 0.1}
+  m_LocalPosition: {x: 7.282, y: 7.618, z: -24.254}
+  m_LocalScale: {x: 0.3, y: 0.5, z: 0.01}
   m_Children:
   - {fileID: 320533089}
   m_Father: {fileID: 1536101535}
@@ -17618,7 +17618,7 @@ PrefabInstance:
     - target: {fileID: 8737582283377541290, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e599cf3b0fcce4b2391cd82d80d0f041, type: 2}
+      objectReference: {fileID: 2100000, guid: 209bbc199e99940ec9c7a61fe61d753a, type: 2}
     - target: {fileID: 8737582284335810508, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Name
       value: Officer
@@ -19542,7 +19542,7 @@ PrefabInstance:
     - target: {fileID: 8737582283377541290, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e599cf3b0fcce4b2391cd82d80d0f041, type: 2}
+      objectReference: {fileID: 2100000, guid: 48e4fae226c3943c0a766f2eb2e5b675, type: 2}
     - target: {fileID: 8737582284335810508, guid: 409a083a327c23746839ddb31d9070fa, type: 3}
       propertyPath: m_Name
       value: Visitor
