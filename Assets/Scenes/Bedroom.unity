@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.52355427, g: 0.5098984, b: 0.10029185, a: 1}
+  m_IndirectSpecularColor: {r: 0.5343689, g: 0.52256763, b: 0.10448032, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: ad3a3413e990249418db59d08f4d30ba, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 1e9cbb2524541bb4f9466e599eb1c94d, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 9aac7dd483ef74907a7664fdcb0518f7, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -4907,19 +4907,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 973037748430437418, guid: 28a6200eee4931a43872537cdadb1a4b, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 26.856613
+      value: -3.9199947e-27
       objectReference: {fileID: 0}
     - target: {fileID: 973037748430437418, guid: 28a6200eee4931a43872537cdadb1a4b, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1e-45
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 973037748430437418, guid: 28a6200eee4931a43872537cdadb1a4b, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 6.6405084e+32
+      value: 4.516583e-39
       objectReference: {fileID: 0}
     - target: {fileID: 973037748430437418, guid: 28a6200eee4931a43872537cdadb1a4b, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 4.5835e-41
+      value: 0.025390625
       objectReference: {fileID: 0}
     - target: {fileID: 2591786385009894097, guid: 28a6200eee4931a43872537cdadb1a4b, type: 3}
       propertyPath: m_Name
