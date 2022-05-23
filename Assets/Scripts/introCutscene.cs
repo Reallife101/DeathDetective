@@ -39,15 +39,6 @@ public class introCutscene : MonoBehaviour
             yield return null;
         }
 
-        timeElapsed = 0;
-        camera.transform.localRotation = Quaternion.Euler(54, 180, 0);
-        while (timeElapsed < 18f)
-        {
-            camera.transform.position = new Vector3(4.3f, 2.7f, Mathf.Lerp(0.5f, -6f, timeElapsed / 20f));
-            timeElapsed += Time.deltaTime;
-            yield return null;
-        }
-
         SceneManager.LoadScene(scene);
 
     }
