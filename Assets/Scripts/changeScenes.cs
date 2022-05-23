@@ -9,6 +9,11 @@ public class changeScenes : MonoBehaviour
 
     public void loadScene()
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene);
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
     }
 }
