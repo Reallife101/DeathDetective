@@ -177,6 +177,7 @@ public class JournalManager : MonoBehaviour
         {
             doctorCluesDiscovered.Add(false);
         }
+        discoverScene("city");
     }
 
 
