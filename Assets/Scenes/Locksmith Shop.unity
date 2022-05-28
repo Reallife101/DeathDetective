@@ -1726,8 +1726,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: abaf044a0f856a94291bc78cac939e5a, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: 
-  clueNumber: 0
+  locationName: garage
+  clueNumber: 5
 --- !u!82 &722730600
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1907,8 +1907,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: 60d6db8c593166e4e807a50b8bd968a4, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: 
-  clueNumber: 0
+  locationName: garage
+  clueNumber: 2
 --- !u!82 &790329513
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2745,8 +2745,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: ccd199c26e66c604e8360eceaa8a2b8a, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: 
-  clueNumber: 0
+  locationName: garage
+  clueNumber: 3
 --- !u!82 &1158722475
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8447,8 +8447,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: 9cfc0c96cb54afe4a928e6ad2dcd49c5, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: 
-  clueNumber: 0
+  locationName: garage
+  clueNumber: 2
 --- !u!114 &1681198273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9084,7 +9084,7 @@ MonoBehaviour:
   he: {fileID: 1950884238}
   ac: {fileID: 8300000, guid: ca591c28a0ab0a74faae6004d08a992e, type: 3}
   volume: 0.8
-  isClue: 1
+  isClue: 0
   locationName: 
   clueNumber: 0
 --- !u!1001 &1951904196
@@ -9493,8 +9493,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: d38a831bbde074e7db05eedf701dfff3, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: Garage
-  clueNumber: 0
+  locationName: garage
+  clueNumber: 4
 --- !u!114 &2048842153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14706,7 +14706,7 @@ MonoBehaviour:
   ac: {fileID: 0}
   volume: 0.8
   isClue: 1
-  locationName: 
+  locationName: garage
   clueNumber: 0
 --- !u!114 &4440656072851007846
 MonoBehaviour:
