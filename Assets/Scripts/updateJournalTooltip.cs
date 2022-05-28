@@ -16,7 +16,16 @@ public class updateJournalTooltip : MonoBehaviour
     public void playTooltip()
     {
         StartCoroutine(playTooltipC());
-        GetComponent<AudioSource>().PlayOneShot(ac, .6f);
+
+        AudioSource au = GetComponent<AudioSource>();
+        if (au.isPlaying)
+        {
+            au.Stop();
+        }
+
+        au.clip = ac;
+
+        au.Play();
     }
 
     IEnumerator playTooltipC()
