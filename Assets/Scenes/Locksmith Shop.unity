@@ -2035,9 +2035,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
       objectReference: {fileID: 0}
+    - target: {fileID: 1910759884401968396, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910759884401968396, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00018310547
+      objectReference: {fileID: 0}
     - target: {fileID: 2309225137415638184, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542610418854296658, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447012607810042556, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2098,6 +2110,14 @@ PrefabInstance:
     - target: {fileID: 7488633206600925247, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557217472359168556, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557217472359168556, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00018310547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab112f8d5e8d5a64bbae9804592429ec, type: 3}
@@ -2482,7 +2502,7 @@ MonoBehaviour:
   volume: 0.8
   isClue: 1
   locationName: 
-  clueNumber: 0
+  clueNumber: 4
 --- !u!65 &949975612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9522,7 +9542,7 @@ MonoBehaviour:
   volume: 0.8
   isClue: 1
   locationName: garage
-  clueNumber: 4
+  clueNumber: 0
 --- !u!114 &2048842153
 MonoBehaviour:
   m_ObjectHideFlags: 0
