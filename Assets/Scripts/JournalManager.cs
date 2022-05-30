@@ -15,6 +15,7 @@ public class JournalManager : MonoBehaviour
     [SerializeField] GameObject garage;
     [SerializeField] GameObject home;
     [SerializeField] GameObject doctor;
+    [SerializeField] GameObject accusation;
 
     //Scenes table of contents
     [SerializeField] List<string> sceneNames;
@@ -220,6 +221,8 @@ public class JournalManager : MonoBehaviour
                 sceneButtons[i].SetActive(false);
             }
         }
+        //Last "scene button" is the accusation button and should alway appear
+        sceneButtons[sceneButtons.Count-1].SetActive(true);
 
         for (int i = 0; i < dinerCluesDiscovered.Count; i++)
         {
@@ -315,6 +318,7 @@ public class JournalManager : MonoBehaviour
         garage.SetActive(false);
         home.SetActive(false);
         doctor.SetActive(false);
+        accusation.SetActive(false);
         tableOfContents.SetActive(false);
     }
 
@@ -357,6 +361,12 @@ public class JournalManager : MonoBehaviour
     {
         disableContent();
         asylum.SetActive(true);
+    }
+
+    public void enableAccusation()
+    {
+        disableContent();
+        accusation.SetActive(true);
     }
 
     public void playTooltip()
