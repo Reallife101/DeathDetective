@@ -116,6 +116,18 @@ public class JournalManager : MonoBehaviour
         }
     }
 
+    public void deleteJ()
+    {
+        saveJournal.deleteFile();
+        genList();
+        clueList = new List<(List<GameObject>, List<bool>)>() { (dinerClues, dinerCluesDiscovered), (asylumClues, asylumCluesDiscovered),
+            (cityClues, cityCluesDiscovered), (officeClues, officeCluesDiscovered), (garageClues, garageCluesDiscovered), (homeClues, homeCluesDiscovered),
+            (doctorClues, doctorCluesDiscovered)};
+        saveJournal.SaveJournal(this);
+        enableContent();
+        enableTableOfContents();
+    }
+
     private void deletejournal()
     {
         saveJournal.deleteFile();
