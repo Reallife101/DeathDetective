@@ -5911,7 +5911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2881557434717087095}
+      - m_Target: {fileID: 1397262027999923528}
         m_TargetAssemblyTypeName: clue, Assembly-CSharp
         m_MethodName: hideDocument
         m_Mode: 1
@@ -11273,10 +11273,10 @@ RectTransform:
   m_Father: {fileID: 33387471934924928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 800}
+  m_SizeDelta: {x: 500, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3177832709205144105
 CanvasRenderer:
@@ -16876,7 +16876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Self Defense
+  m_text: Purchase List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -16977,10 +16977,10 @@ RectTransform:
   m_Father: {fileID: 2542610418854296658}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 750}
+  m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6433569748511837669
 CanvasRenderer:
@@ -18324,7 +18324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Self Defense
+  m_text: Window Reciept
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -24948,7 +24948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2881557434717087095}
+      - m_Target: {fileID: 3066686374706336953}
         m_TargetAssemblyTypeName: clue, Assembly-CSharp
         m_MethodName: hideDocument
         m_Mode: 1
@@ -26318,10 +26318,10 @@ RectTransform:
   m_Father: {fileID: 2558627153589898548}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 750}
+  m_SizeDelta: {x: 700, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6831039503304609766
 CanvasRenderer:
@@ -26732,7 +26732,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1397262027999923528}
         m_TargetAssemblyTypeName: clue, Assembly-CSharp
-        m_MethodName: playAudio
+        m_MethodName: showDocument
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29305,7 +29305,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3066686374706336953}
         m_TargetAssemblyTypeName: clue, Assembly-CSharp
-        m_MethodName: playAudio
+        m_MethodName: showDocument
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
