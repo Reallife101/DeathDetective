@@ -11621,7 +11621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cceaa62aefd8c49a98ce7de2518ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Cutscene
+  scene: AssetCredits
 --- !u!114 &1557750798
 MonoBehaviour:
   m_ObjectHideFlags: 0
