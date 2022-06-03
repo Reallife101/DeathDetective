@@ -5284,7 +5284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work Schedule
+  m_text: Patient List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -12268,7 +12268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work Schedule
+  m_text: Prescription Records
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -19272,7 +19272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work Schedule
+  m_text: Visitor Log
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -23159,7 +23159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Work Schedule
+  m_text: Notice
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
