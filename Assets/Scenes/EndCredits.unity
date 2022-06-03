@@ -851,7 +851,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 59ea8696d201cf2418ca44db9a3491ad, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6bac030eda299c34c90d6eed1fb6b828, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -1318,15 +1318,13 @@ MonoBehaviour:
 
     The Ambient Music Pack Lite by Cosmocat
 
-    Valentines
-    Pack by Robot Skeleton
+
+    All
+    images except for the manager and the two girls in the diner are just stock photos.
 
 
-    All images except for the manager and the two girls
-    in the diner are just stock photos.
-
-
-    Pulp Fiction Quote from https://www.youtube.com/watch?v=m02q_Bt9LeI
+    Pulp
+    Fiction Quote from https://www.youtube.com/watch?v=m02q_Bt9LeI
 
 
 '
