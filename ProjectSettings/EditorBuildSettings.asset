@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndCredits.unity
     guid: 1ec7b041dd32f4b5980fd119078b2c53
+  - enabled: 1
+    path: Assets/Scenes/FatherTalk.unity
+    guid: 3bb481f1f6708493fa8a5a392c4c3619
   m_configObjects: {}
