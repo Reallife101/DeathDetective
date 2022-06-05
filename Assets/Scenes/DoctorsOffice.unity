@@ -4249,8 +4249,8 @@ MonoBehaviour:
   ac: {fileID: 8300000, guid: 135cf43d2d98020479b6389b79dd7507, type: 3}
   volume: 0.8
   isClue: 1
-  locationName: 
-  clueNumber: 0
+  locationName: doctor
+  clueNumber: 4
 --- !u!1001 &1337980600
 PrefabInstance:
   m_ObjectHideFlags: 0
