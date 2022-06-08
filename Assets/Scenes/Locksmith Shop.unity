@@ -15775,7 +15775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   he: {fileID: 4440656072851007846}
-  ac: {fileID: 0}
+  ac: {fileID: 8300000, guid: ddf37242d2fc5ce41ae10148fe6293c8, type: 3}
   volume: 0.8
   isClue: 1
   locationName: garage
