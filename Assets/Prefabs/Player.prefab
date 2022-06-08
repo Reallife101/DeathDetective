@@ -14769,7 +14769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ac: {fileID: 8300000, guid: 3f684ebb3c16b894294d0280e6dfe62e, type: 3}
-  volume: 0.8
+  volume: 2
   document: {fileID: 0}
 --- !u!82 &1833538683748157356
 AudioSource:

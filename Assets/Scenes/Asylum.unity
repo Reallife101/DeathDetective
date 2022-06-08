@@ -3684,7 +3684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   he: {fileID: 656649285}
   ac: {fileID: 8300000, guid: 3f684ebb3c16b894294d0280e6dfe62e, type: 3}
-  volume: 0.8
+  volume: 2
   isClue: 1
   locationName: Asylum
   clueNumber: 2
@@ -3701,7 +3701,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.39
   Loop: 0
   Mute: 0
   Spatialize: 0
