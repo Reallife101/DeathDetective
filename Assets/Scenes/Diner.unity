@@ -5199,7 +5199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   he: {fileID: 202639459}
   ac: {fileID: 8300000, guid: b11b245462b904333b17c21970680ecb, type: 3}
-  volume: 0.8
+  volume: 1.8
   isClue: 0
   locationName: 
   clueNumber: 0
