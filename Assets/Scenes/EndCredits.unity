@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1479,13 +1479,47 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Assets:\nAllen Key Set - PBR\nBar Stool by SimpleModelsForMe\nBasic Bedroom
-    Pack by Mavi3D\nCigarette Lighter PBR by devotid\nCity package by 255 pixel studios\nCustomizable
-    Bedroom by Night Forest\nFast Food Low Poly Building 3D by GlowFox Games\nFootstep
-    and Foley Sounds by Gamemaster Audio\nFREE Casual Food Pack-Mobile/VR by Lumo-Art
-    3D\n[Free] Phone by float3D\nGrimoire Style Book by Robotic Rainbow Studios\nHighlight
-    Plus by Kronnect\nIndustrial Vacuum Cleaner by Rescue3D Game Assets\n\nMusic:
-    \nFree Dreamy Ambient Music Pack by Mt. Berkoo\n\"Farewell Blues\" - The Seatbelts\n"
+  m_text: 'Assets:
+
+    Allen Key Set - PBR
+
+    Bar Stool by SimpleModelsForMe
+
+    Basic
+    Bedroom Pack by Mavi3D
+
+    Cigarette Lighter PBR by devotid
+
+    City package
+    by 255 pixel studios
+
+    Customizable Bedroom by Night Forest
+
+    Fast Food
+    Low Poly Building 3D by GlowFox Games
+
+    Footstep and Foley Sounds by Gamemaster
+    Audio
+
+    FREE Casual Food Pack-Mobile/VR by Lumo-Art 3D
+
+    Free Dreamy Ambient
+    Music Pack by Mt. Berkoo
+
+    "Farewell Blues" - The Seatbelts
+
+    [Free] Phone
+    by float3D
+
+    Grimoire Style Book by Robotic Rainbow Studios
+
+    Highlight
+    Plus by Kronnect
+
+    Industrial Vacuum Cleaner by Rescue3D Game Assets
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
@@ -1818,7 +1852,8 @@ MonoBehaviour:
     by MAD Entertainment\nPaintings Free by Webcadabra\nSimple Garage by Aikodex\nSnaps
     Prototype | Office by Asset Store Originals\nThe Ambient Music Pack Lite by Cosmocat\n\nAll
     images except for the manager and the two girls in the diner are just stock photos.\n\nPulp
-    Fiction Quote from https://www.youtube.com/watch?v=m02q_Bt9LeI\n\n\n\n\n\n\n\n\n\n"
+    Fiction Quote from https://www.youtube.com/watch?v=m02q_Bt9LeI\n\nOther Resources:\nAdobe
+    Illistrate\nAudacity\nGithub\nGoogle Docs\nMicrosoft Excel \nUnity\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
   m_sharedMaterial: {fileID: 7787845007175993925, guid: 2bdf64815fd851441a2d31988e3763e5, type: 2}
