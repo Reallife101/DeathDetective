@@ -57,13 +57,10 @@ public class PPXControls : MonoBehaviour
 
     IEnumerator FadeToWhite()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().canMove = false;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<interact>().canInteract = false;
-        GameObject.FindGameObjectWithTag("Journal").SetActive(false);
         float timeElapsed = 0;
-        while (timeElapsed < 6f)
+        while (timeElapsed < 60f)
         {
-            fadeWhite.weight = Mathf.Lerp(0, 1, timeElapsed / lerpDuration);
+            fadeWhite.weight = Mathf.Lerp(0, 1, timeElapsed / 60f);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
@@ -71,30 +68,36 @@ public class PPXControls : MonoBehaviour
 
     IEnumerator FadeToBlack()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<movement>().canMove = false;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<interact>().canInteract = false;
-        GameObject.FindGameObjectWithTag("Journal").SetActive(false);
         float timeElapsed = 0;
-        while (timeElapsed < 4f)
+        while (timeElapsed < 40f)
         {
-            fadeBlack.weight = Mathf.Lerp(0, 1, timeElapsed / lerpDuration);
+            fadeBlack.weight = Mathf.Lerp(0, 1, timeElapsed / 40f);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
     }
-
+    IEnumerator WaitToLoadCredits(float timeToWait)
+    {
+        // wait some time
+        Debug.Log("Begin Waiting");
+        yield return new WaitForSeconds(timeToWait);
+        Debug.Log("Done Waiting");
+        SceneManager.LoadScene("EndCredits");
+    }
     public void lerpToScene(string name)
     {
         StartCoroutine(LerpIn(lerpDuration/2f, name));
     }
 
-    public void fadeToBlack()
+    public void fadeToBlack(float timeToWait)
     {
         StartCoroutine(FadeToBlack());
+        StartCoroutine(WaitToLoadCredits(timeToWait));
     }
 
-    public void fadeToWhite()
+    public void fadeToWhite(float timeToWait)
     {
         StartCoroutine(FadeToWhite());
+        StartCoroutine(WaitToLoadCredits(timeToWait));
     }
 }
