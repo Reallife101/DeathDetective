@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FatherTalk.unity
     guid: 3bb481f1f6708493fa8a5a392c4c3619
+  - enabled: 1
+    path: Assets/Scenes/Incorrect.unity
+    guid: 3ecd40d1811044352b2117b53a24148a
   m_configObjects: {}
